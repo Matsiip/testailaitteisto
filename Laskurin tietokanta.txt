@@ -1,0 +1,15 @@
+CREATE TABLE [dbo].[Kuntosali](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[paivamaara] [date] NOT NULL,
+	[etunimi] [nchar](20) NOT NULL,
+	[sukunimi] [nchar](20) NOT NULL,
+	[Paino] [float] NOT NULL,
+	[pituus] [float] NOT NULL,
+	[painoindex] [float] NOT NULL,
+	[rasvaprosentti] [float] NOT NULL,
+ CONSTRAINT [PK_Kuntosali] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
